@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	for(int i=0; i<=7; i++)
+	{
+		//full screen window w: 80, h: 50
+		window(1+5*i,1+3*i,80-5*i,50-3*i);
+		textbackground(7-i);//black color
+		clrscr();
+		textcolor(i); //white color
+		gotoxy(2,2); cprintf("WINDOW-%d",8-i);
+	}
+
+	//pause screen
+	getch();
+}

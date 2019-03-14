@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+#include<dos.h>
+main()
+{
+   int a=DETECT,b,c,d;
+   clrscr();
+   initgraph(&a,&b,"");
+   for(c=1;c<7;c++)
+   {
+     setcolor(c*2);
+     for(d=10;d<70;d++)
+     {
+     circle(getmaxx()/2,getmaxy()/2,c+d*3);
+     }
+   }
+   getch();
+   closegraph();
+   }

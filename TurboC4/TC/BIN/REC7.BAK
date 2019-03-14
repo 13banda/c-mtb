@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+int rev(int);
+main()
+{
+ int a,r;
+ clrscr();
+ printf("enter the number");
+ scanf("%d",&a);
+
+ r=rev(a);
+ printf("%d",r);
+ getch();
+}
+int rev(int a)
+{
+  int f,b;
+  if(a>0&&a<10)
+  {
+  return a;
+  }
+  else
+  {
+    b=a%10*10;
+    f=rev(a/10);
+    b=b*10+f;
+    return b;
+}
+
+ }
+

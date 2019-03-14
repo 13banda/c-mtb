@@ -1,0 +1,16 @@
+	#include<stdio.h>
+	#include<conio.h>
+	main()
+	{   int a,b,c;
+	clrscr();
+	printf("centimeter=");
+	  scanf("%d",&a);
+	  b=a%10000;
+	  c=a/100;
+	  printf("kilomerter=%d\nmeter=%d",b,c);
+
+
+
+
+	 getch();
+	   }

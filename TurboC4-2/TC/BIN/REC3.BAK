@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void no(int,int);
+main()
+{
+ int a,r;
+ clrscr();
+ printf("enter the number");
+ scanf("%d",&a);
+
+ printf("even nois\n");
+ no(2,a);
+ printf("\n\nodd number");
+ no(1,a);
+ //printf("%d",r);
+ getch();
+}
+void no(int a,int b)
+{
+  if(a<=b)
+  {
+    printf(" %d,",a);
+    no(a+2,b);
+    }
+ }
+

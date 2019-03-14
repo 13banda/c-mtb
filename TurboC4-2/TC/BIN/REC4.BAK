@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int no(int);
+main()
+{
+  int a,sum;
+  clrscr();
+  printf("enter the number");
+  scanf("%d",&a);
+
+  sum=no(a);
+  printf("%d",sum);
+  getch();
+}
+
+int no(int a)
+{
+int f;
+	if(a==1)
+	{
+	return 1;
+	}
+	else
+	{
+	f=a+no(a-1);
+	return f;
+	}
+}

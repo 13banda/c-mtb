@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void dis(int [] ,int);
+main()
+{
+   int a[100],b,c;
+   clrscr();
+   printf("enter the elements in arrey=");
+   scanf("%d",&b);
+   for(c=0;c<b;c++)
+   {
+      printf("a[%d]=",c);
+      scanf("%d",&a[c]);
+   }
+
+    dis(a,b);
+    getch();
+ }
+
+ void dis(int a[],int b)
+ {
+    int f;
+    if(b>=0)
+    {
+
+       printf("\na[%d]=%d",b,a[b]);
+     }dis(a,b-1);
+ }
+
+
+
+
+

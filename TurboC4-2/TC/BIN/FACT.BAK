@@ -1,0 +1,9 @@
+int fact(int a)
+{
+   int b,c=1;
+   for (b=a;b>=1;b--)
+   {
+      c*=b;
+    }
+    return c;
+    }

@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+#include<math.h>
+#include<ctype.h>
+#include<iostream.h>
+#include<bios.h>
+#include<dos.h>
+#include<string.h>
+#include<stdlib.h>
